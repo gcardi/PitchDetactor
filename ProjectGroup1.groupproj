@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{42B54A7B-EA68-4C82-A5E1-D26801589594}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PitchDetector.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PitchDetector">
+        <MSBuild Projects="PitchDetector.cbproj"/>
+    </Target>
+    <Target Name="PitchDetector:Clean">
+        <MSBuild Projects="PitchDetector.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PitchDetector:Make">
+        <MSBuild Projects="PitchDetector.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PitchDetector"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PitchDetector:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PitchDetector:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
