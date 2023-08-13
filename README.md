@@ -16,3 +16,10 @@ Also, it strongly depends on 'q' library from https://github.com/cycfi/q. Since 
 
 
 
+git clone --recurse-submodules
+
+git submodule add https://github.com/cycfi/q.git
+
+git submodule update --init --recursive
+
+git update-index --cacheinfo 160000,440c297b8fc784f65536f00afbe64d8a7bce4a1d,q
