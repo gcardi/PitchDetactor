@@ -16,7 +16,7 @@ The input test procedure (interactive detection):
 Server mode detection:
 
 <div class="container">
-    <img src="docs/assets/images/Ex1.jpg" alt="Detection of A (server mode)">
+    <img src="docs/assets/images/Ex2.jpg" alt="Detection of A (server mode)">
 </div>
 
 ## Getting Started
