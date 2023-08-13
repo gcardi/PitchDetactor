@@ -31,17 +31,25 @@ Also, it strongly depends on 'q' library from https://github.com/cycfi/q. Since 
 
 Clone the repository using the following command:
 
+```
 git clone --recurse-submodules https://github.com/gcardi/PitchDetector.git
+```
 
 If necessary, manually add the 'q' submodule:
 
+```
 git submodule add https://github.com/cycfi/q.git
+```
 
 Then update the submodules of 'q':
 
+```
 cd q
 git submodule update --init --recursive
+```
 
 It's important to set 'q' library to commit 440c297b8fc784f65536f00afbe64d8a7bce4a1d as C++Builder doesn't support concepts.
 
+```
 git update-index --cacheinfo 160000,440c297b8fc784f65536f00afbe64d8a7bce4a1d,q
+```
