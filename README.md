@@ -9,11 +9,15 @@ It can reliably detect tones in complex, rather noisy signals with varying duty-
 
 The input test procedure (interactive detection):
 
-<img src="docs/assets/images/Ex1.jpg" alt="Detection of A (LA) at about 440 Hz from an old Korg M10">
+<div class="container">
+    <img src="docs/assets/images/Ex1.jpg" alt="Detection of A (LA) at about 440 Hz from an old Korg M10">
+</div>
 
 Server mode detection:
 
-<img src="docs/assets/images/Ex1.jpg" alt="Detection of A (server mode)">
+<div class="container">
+    <img src="docs/assets/images/Ex1.jpg" alt="Detection of A (server mode)">
+</div>
 
 ## Getting Started
 
